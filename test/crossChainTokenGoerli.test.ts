@@ -21,9 +21,9 @@ async function main() {
 
   console.log('Balance Owner :>> ', await crossChainTokenOnGoerli.balanceOf(owner));
 
-  // await crossChainTokenOnGoerli.bridge("100000000000000000000", {
-  //   value: "12345678900000000",
-  // });
+  await crossChainTokenOnGoerli.bridge("10000000000000000000000", {
+    value: "123456789000000000",
+  });
 }
 
 // We recommend this pattern to be able to use async/await everywhere
